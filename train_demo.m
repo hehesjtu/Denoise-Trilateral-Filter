@@ -6,7 +6,7 @@ global pad_pixel;       global overlap;         % the padding pixel and overlap 
 global blocksize;       global windowsize;      % the size of the block and windowsize
 
 % set all the global parameters
-blocksize = 16; windowsize = floor(blocksize*3/4); average = 5; Ncmp = floor(average/2);
+blocksize = 8; windowsize = floor(blocksize*3/4); average = 5; Ncmp = floor(average/2);
 pad_pixel = floor(blocksize*2);   overlap = floor(blocksize/2); Ssws = floor(blocksize/4);
 video=VideoReader('noisy_far.avi');
 numFrames = video.NumberOfFrames; 
@@ -24,7 +24,7 @@ for num = 3:numFrames-2
             disp(strcat('tracking the motion of the previous', '  ',num2str(-numcur),'  ',' frame!'));
         end
         if numcur == 0
-            disp(strcat('tracking the motion of the current frame£¡'));
+            disp(strcat('tracking the motion of the current frameÂ£Â¡'));
         end
         if numcur >0
             disp(strcat('tracking the motion of the next','  ',num2str(numcur),'  ',' frame!'));
