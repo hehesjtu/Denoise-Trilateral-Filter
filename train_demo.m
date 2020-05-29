@@ -53,10 +53,10 @@ for num = 3:numFrames-2
         mv_fine = MV_fine(imgprepad,imgcurpad,round(mv_refine),Ssws);
         [mv_fine, Rationality] = MV_Refine(mv_fine, Rationality);
         toc
-        % save the mv and rationality 
+        % initialize the mv and rationality 
         rationality_box(:,:,:,num-2) = Rationality;
         mv_box(:,:,:,num-2) = mv_fine;
-        % save the mv data
+        % save the mv and rationality data
         if numcur <0 && numFrames-2==num
             mkdir(strcat('./train',num2str(blocksize),'/'));
             saldir = strcat('./train',num2str(blocksize),'/');
