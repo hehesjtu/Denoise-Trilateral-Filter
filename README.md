@@ -1,5 +1,5 @@
-# Denoise-Trilateral-Filter
-This is the Matlab source code of method related "Trilateral Filter-based denoising."
+# Denoise-Trajectory-Filter
+This is the Matlab source code of method related "Trajectory Filter-based denoising."
 
 Run the train_demo.m and noisy video (eg. noisy_far.avi) to get .mat files (mv files or rationality files), you can set different blocksizes in the global parameter setting (set blocksize Bs as 8 or 16 for advice), Run the test_demo.m to get the denoise video. (eg. denoise_far.avi)
 
